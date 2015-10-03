@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_morse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="150dp"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please enter the Morse code string (can only enter letters, numbers and spaces)"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edittext_morse_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="SOS"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/morse_send"
+        android:onClick="onClick_SendMorseCode" />
+
+</LinearLayout>
